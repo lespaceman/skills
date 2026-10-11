@@ -1,0 +1,4 @@
+interface:
+  display_name: "Define Regression Scope"
+  short_description: "Turn change and risk signals into a rerunnable regression scope"
+  default_prompt: "Define a rerunnable regression scope for this release: separate always-rerun baseline checks from change-triggered additions, explain why each area belongs, and recommend rerun depth."
