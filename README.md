@@ -96,6 +96,14 @@ The intent charters (`define-smoke-scope`, `define-regression-scope`, `explorato
 | Playwright skills | Node.js and `@playwright/test` in the target project |
 | Robot skills | Python, Robot Framework, and `robotframework-browser` in the target project |
 
+### Related skills
+
+`setup-engineering-workflow` maps a wider engineering workflow that also uses skills published elsewhere: planning and triage skills such as `to-prd`, `to-issues`, `triage`, `tdd`, and `diagnose` (by Matt Pocock, originally from [mattpocock/skills](https://github.com/mattpocock/skills)), plus `clickup`, `sentry`, `shadcn-ui`, and `frontend-design`. Install them by name from [lespaceman/athena-workflow-marketplace](https://github.com/lespaceman/athena-workflow-marketplace):
+
+```shell
+npx skills add lespaceman/athena-workflow-marketplace --skill to-prd
+```
+
 ## Repository layout
 
 ```text

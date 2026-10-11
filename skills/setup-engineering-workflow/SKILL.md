@@ -157,6 +157,15 @@ If neither source is resolvable, fall back to this reference inventory (kept in 
 - **Handoff:** `workflow-handoff`, `handoff`
 - **Installed, not part of the workflow (load only on explicit request):** `caveman`, `git-guardrails-claude-code`, `setup-pre-commit`, `write-a-skill`
 
+#### Where the skills come from
+
+The QA, browser, and setup skills in this inventory ship in [lespaceman/skills](https://github.com/lespaceman/skills). The rest are published in [lespaceman/athena-workflow-marketplace](https://github.com/lespaceman/athena-workflow-marketplace) under the same names. If a skill in the inventory is not installed, tell the user which source to install it from rather than listing it as available:
+
+| Skills | Install |
+|--------|---------|
+| `grill-with-docs`, `prototype`, `to-prd`, `to-issues`, `triage`, `tdd`, `diagnose`, `zoom-out`, `improve-codebase-architecture`, `handoff`, `workflow-handoff`, `caveman`, `git-guardrails-claude-code`, `setup-pre-commit`, `write-a-skill` | `npx skills add lespaceman/athena-workflow-marketplace --skill <name>`. Authored by Matt Pocock; the canonical source is [mattpocock/skills](https://github.com/mattpocock/skills), where some have since been renamed. |
+| `clickup`, `sentry`, `shadcn-ui`, `frontend-design` | `npx skills add lespaceman/athena-workflow-marketplace --skill <name>`. `clickup`, `sentry`, and `shadcn-ui` also need their MCP servers. |
+
 Then write the four docs files using the seed templates in this skill folder as a starting point:
 
 - [issue-tracker-github.md](./issue-tracker-github.md) — GitHub issue tracker
