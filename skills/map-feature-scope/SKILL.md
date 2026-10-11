@@ -38,7 +38,7 @@ Dispatch browser work to a subagent via the Task tool. The main agent coordinate
 artifact; the subagent gathers live observations.
 
 The subagent contract:
-- invoke it with access to the `mcp__plugin_agent-web-interface_browser__*` tools so the browser
+- invoke it with access to the browser MCP tools (`mcp__drisp-browser__*`) so the browser
   companion skill auto-loads
 - ask it to identify routes, tabs, menus, dialogs, settings pages, role gates, and major entry
   points for the requested feature

@@ -6,5 +6,5 @@ interface:
 dependencies:
   tools:
     - type: "mcp"
-      value: "agent-web-interface"
+      value: "drisp-browser"
       description: "Browser automation MCP used to verify selectors against the live site"

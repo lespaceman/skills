@@ -1,7 +1,7 @@
 ---
 name: linear
 description: >
-  MUST load BEFORE reading from or writing to Linear and BEFORE any mcp__plugin_linear_linear__ tool call. Use when the user asks to create, inspect, update, triage, plan, comment on, or close Linear issues, projects, milestones, cycles, labels, teams, or backlog items; when a workflow needs issue-tracker context; when converting plans or PRDs into Linear work; when syncing delivery status back to Linear; or when the user says "Linear", "ticket", "issue", "project board", "backlog", "triage", "cycle", "roadmap", "blocked by", "branch from issue", or an issue key such as ABC-123. This skill teaches agent workflow discipline for Linear; it does not replace project-specific planning, code review, tests, or browser verification.
+  MUST load BEFORE reading from or writing to Linear and BEFORE any Linear MCP tool call. Use when the user asks to create, inspect, update, triage, plan, comment on, or close Linear issues, projects, milestones, cycles, labels, teams, or backlog items; when a workflow needs issue-tracker context; when converting plans or PRDs into Linear work; when syncing delivery status back to Linear; or when the user says "Linear", "ticket", "issue", "project board", "backlog", "triage", "cycle", "roadmap", "blocked by", "branch from issue", or an issue key such as ABC-123. This skill teaches agent workflow discipline for Linear; it does not replace project-specific planning, code review, tests, or browser verification.
 ---
 
 # Linear
@@ -19,13 +19,7 @@ Use the Linear MCP tools as the structured interface to the team's issue tracker
 
 ## Tool Use
 
-The MCP server is configured as `linear`, so plugin tool names follow:
-
-```text
-mcp__plugin_linear_linear__<tool>
-```
-
-The plugin ships a Codex-compatible stdio MCP bridge:
+This skill needs the official Linear MCP server, which `npx skills add` does not install. Register it under the key `linear` (tools then appear as `mcp__linear__<tool>`; inside a Claude Code plugin they are `mcp__plugin_linear_linear__<tool>`). For example, with a stdio bridge:
 
 ```json
 {

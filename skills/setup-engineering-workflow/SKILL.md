@@ -149,7 +149,7 @@ If neither source is resolvable, fall back to this reference inventory (kept in 
 - **Production errors:** `sentry`
 - **Code & diagnosis:** `tdd`, `diagnose`, `zoom-out`, `improve-codebase-architecture`
 - **UI:** `frontend-design`, `shadcn-ui`
-- **Live browser:** `agent-web-interface-guide`
+- **Live browser:** `drisp-browser`
 - **Exploration:** `map-feature-scope`, `capture-feature-evidence`
 - **Test design:** `plan-test-coverage`, `generate-test-cases`, `review-test-cases`, `exploratory-test-writer`
 - **Test automation:** `playwright-analyze-test-codebase`, `add-playwright-tests`, `write-test-code`, `playwright-review-test-code`, `playwright-fix-flaky-tests`

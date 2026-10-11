@@ -4,7 +4,7 @@ When infrastructure failures occur during E2E test building, follow the general 
 
 ## Browser MCP unavailable
 
-The browser MCP server (`agent-web-interface`) must be running for site exploration.
+The browser MCP server (`drisp-browser`, from `@drisp/browser-mcp`) must be running for site exploration.
 
 1. Verify the MCP server is configured in the project (check `.mcp.json` or plugin config).
 2. Ask the user to confirm the MCP server is running or to restart it.

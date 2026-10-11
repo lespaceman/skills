@@ -44,7 +44,7 @@ triaging noise instead of reasoning about coverage.
 
 The subagent's contract:
 
-- **Browser MCP access required:** invoke the subagent with access to the `mcp__plugin_agent-web-interface_browser__*` tools. Its companion skill (selector-capture patterns, state-observation discipline, structured-report format, multi-page recovery) auto-loads whenever those tools come into scope. The element inventory the downstream pipeline depends on comes from following those patterns — if the subagent's inventory comes back as raw CSS or narrative prose, the skill didn't load and Gate 4 will fail.
+- **Browser MCP access required:** invoke the subagent with access to the browser MCP tools (`mcp__drisp-browser__*`). Its companion skill (selector-capture patterns, state-observation discipline, structured-report format, multi-page recovery) auto-loads whenever those tools come into scope. The element inventory the downstream pipeline depends on comes from following those patterns — if the subagent's inventory comes back as raw CSS or narrative prose, the skill didn't load and Gate 4 will fail.
 - **Output format:** a structured report (template in §3 below), not a narrative summary. If the subagent returns prose, reject and retry with explicit format instructions.
 - **Return control cleanly:** the subagent writes the artifact and reports back with the path plus a short status note; the main agent reads the artifact, never the raw browser transcript.
 - **Bounded ownership:** the subagent must explore only the assigned feature area or mapped

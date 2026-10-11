@@ -6,5 +6,5 @@ interface:
 dependencies:
   tools:
     - type: "mcp"
-      value: "agent-web-interface"
+      value: "drisp-browser"
       description: "Optional browser automation MCP used for bounded evidence spot-checks when a spec claim still needs confirmation"
